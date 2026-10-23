@@ -1,0 +1,346 @@
+:root {
+    --color-background: #ffffff;
+    --color-text: #222222;
+    --color-primary: #444444;
+}
+.full-page{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--color-background);
+}
+.pad-gapped{
+    padding: 1em;
+    gap: 1em;
+}
+.vertical{
+    display: flex;
+    flex-direction: column;
+}
+.centered{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.better-textarea{
+    padding: 0.1em 0.6em 0.1em 0.6em;
+    resize: none;
+    overflow: hidden;
+    align-content: center;
+}
+.rounded{
+    border-radius: 1em;
+}
+.primary-button{
+    background-color: var(--color-primary);
+}
+.secondary-button{
+    background-color: var(--color-background);
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+/*----------------------------------*/
+.title-header{
+    color: var(--color-text);
+    font-size: 6em;
+    font-weight: bold;
+}
+.login-labels{
+    color: var(--color-text);
+    font-weight: bold;
+    font-size: 4em;
+}
+.login-field{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: blue;
+}
+.login-wrapper{
+    width: 70%;
+    height: 50%;
+    align-items: center;
+}
+.login-textareas{
+    width: 70%;
+    height: 3em;
+    background-color: white;
+    color: var(--color-text);
+    font-size: 2em;
+}
+.login-buttons{
+    width: 70%;
+    display: flex;
+    justify-content: end;
+}
+.login-button{
+    width: 15%;
+    font-size: 1.5em;
+}
+.login-error{
+    color: red;
+    background-color: #FF8585;
+    border: 3px solid red;
+    display: flex;
+    width: 70%;
+    font-size: 2em;
+}
+/*----------------------------------*/
+.toolbar{
+    width: 100%;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid var(--color-primary);
+    box-shadow: 0 0 0 2px var(--color-primary);
+}
+.toolbar-letter{
+    display: flex;
+    aspect-ratio: 1/1;
+    height: 75%;
+    font-size: 3em;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: var(--color-background);
+}
+.toolbar-message{
+    color: var(--color-text);
+}
+/*----------------------------------*/
+.expenses-content{
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+.expenses-lists{
+    display: flex;
+    height: 100%;
+    width: 70%;
+    border-right: 2px solid var(--color-primary);
+}
+.expenses-chart{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    border-left: 2px solid var(--color-primary);
+}
+.expense-list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    border: 2px solid var(--color-assigned);
+    overflow-y: scroll;
+}
+.expense-list-row{
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    height: 48%;
+}
+.expense-list-header{
+    display: flex;
+    width: 95%;
+    height: 10%;
+}
+.expense-list-title{
+    color: var(--color-assigned);
+    display: flex;
+    width: 80%;
+    height: 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.expense-list-content{
+    width: 100%;
+    height: 85%;
+    gap: 0.5em;
+    overflow-y: auto;
+    align-content: center;
+    align-items: center;
+}
+.expense-list-button{
+    background-color: transparent;
+    color: var(--color-assigned);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    font-size: 2em;
+    padding: 0.25em;
+}
+.expense-list-button:hover{
+    background-color: var(--color-assigned);
+    color: var(--color-background);
+}
+.expense-icon{
+    display: flex;
+    font-size: 2em;
+    padding: 0.25em;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-color: var(--color-assigned);
+    color: var(--color-background);
+}
+.expense{
+    border: 1px solid var(--color-assigned);
+    width: 90%;
+    height: 5em;
+    flex-shrink: 0;
+    padding: 0.75em 0 0 0;
+    transition: all 0.2s;
+}
+.expense:hover{
+    height: 8.5em;
+}
+.expense-info{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 2em;
+    text-wrap: wrap;
+    word-break: break-all;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+.expense-name{
+    color: var(--color-assigned);
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.expense-date{
+    color: var(--color-assigned);
+    font-size: 1em;
+}
+.expense-positive{
+    background-color: var(--color-assigned);
+    color: var(--color-background);
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+}
+.expense-negative{
+    background-color: var(--color-background);
+    color: var(--color-assigned);
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+}
+.expense-buttons{
+    display: flex;
+    justify-content: end;
+}
+.expense-edit-button{
+    background-color: var(--color-assigned);
+    border: 3px solid var(--color-assigned);
+}
+.expense-edit-button:hover{
+    color: var(--color-assigned);
+    background-color: var(--color-background);
+    border: 3px solid var(--color-assigned);
+}
+.expense-delete-button{
+    background-color: var(--color-assigned);
+    border: 3px solid var(--color-assigned);
+}
+.expense-delete-button:hover{
+    color: red;
+    background-color: #FF8585;
+    border: 3px solid red;
+}
+/*----------------------------------*/
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-assigned);
+    border-radius: 1em;
+}
+::-webkit-scrollbar-button {
+    display: none;
+}
+/*----------------------------------*/
+.blur-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.edit-container{
+    position: relative;
+    width: 30%;
+    background-color: var(--color-background);
+    border: 3px solid var(--color-assigned);
+    align-items: center;
+}
+.edit-textareas{
+    width: 70%;
+    height: 2em;
+    background-color: var(--color-background);
+    color: var(--color-assigned);
+    font-size: 1.5em;
+    border-color: var(--color-assigned);
+}
+.edit-date{
+    display: flex;
+    flex-direction: row;
+}
+.edit-date-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1em;
+}
+.edit-title{
+    font-size: 2em;
+    font-weight: bold;
+}
+.edit-buttons{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.edit-text{
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--color-assigned);
+}
+.edit-confirm{
+    background-color: var(--color-assigned);
+    border: 3px solid var(--color-assigned);
+    font-size: 1.2em;
+}
+.edit-confirm:hover{
+    color: var(--color-assigned);
+    background-color: var(--color-background);
+    border: 3px solid var(--color-assigned);
+}
+.edit-discard{
+    background-color: var(--color-assigned);
+    border: 3px solid var(--color-assigned);
+    font-size: 1.2em;
+}
+.edit-discard:hover{
+    color: red;
+    background-color: #FF8585;
+    border: 3px solid red;
+}
+/*----------------------------------*/
+.chart-title{
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 2em;
+}
+/*----------------------------------*/

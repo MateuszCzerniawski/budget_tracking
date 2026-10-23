@@ -1,0 +1,9 @@
+title,category,day,month,year,hour,minute,count
+test,Health,2,10,2022,16,48,-200.75
+test,Leisure & travel,2,10,2022,16,48,67.99
+test,Other,2,10,2022,16,48,300.0
+test,Basic,2,10,2022,16,48,-0.02
+test,Transport,2,10,2022,16,48,100.0
+New Expense!,Basic,13,1,2026,23,36,-12.01
+test,Basic,12,12,2012,12,12,-12.0
+coś,Transport,1,10,2003,10,20,10
